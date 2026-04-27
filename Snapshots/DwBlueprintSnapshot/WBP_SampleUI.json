@@ -1,0 +1,59 @@
+{
+	"blueprintPath": "/DwBlueprintSnapshot/WBP_SampleUI.WBP_SampleUI",
+	"mvvm":
+	{
+		"bindings": [
+			{
+				"bindingType": "OneWayToDestination",
+				"destination": "Percent",
+				"source": "GetHealthPercent"
+			}
+		],
+		"viewModels":
+		{
+			"VM_Health":
+			{
+				"class": "/DwBlueprintSnapshot/VM_Health.VM_Health_C",
+				"contextId": "7A2A7E39-4E33-AACB-6755-918A760CA9A3",
+				"createGetter": true,
+				"createSetter": false,
+				"creationType": "Manual",
+				"optional": false
+			}
+		}
+	},
+	"parentClass": "/Script/UMG.UserWidget",
+	"widgetTree":
+	{
+		"root": "Overlay_25",
+		"widgets":
+		{
+			"Overlay_25":
+			{
+				"class": "/Script/UMG.Overlay"
+			},
+			"ProgressBar_34":
+			{
+				"class": "/Script/UMG.ProgressBar",
+				"delta":
+				{
+					"FillColorAndOpacity":
+					{
+						"G": 0.5,
+						"R": 0
+					}
+				},
+				"parent": "Overlay_25",
+				"slot":
+				{
+					"class": "/Script/UMG.OverlaySlot",
+					"delta":
+					{
+						"HorizontalAlignment": "HAlign_Fill",
+						"VerticalAlignment": "VAlign_Fill"
+					}
+				}
+			}
+		}
+	}
+}

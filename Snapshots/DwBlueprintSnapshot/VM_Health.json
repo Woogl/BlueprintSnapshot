@@ -1,0 +1,24 @@
+{
+	"blueprintPath": "/DwBlueprintSnapshot/VM_Health.VM_Health",
+	"newFunctions":
+	{
+		"GetHealthPercent": [
+			"function GetHealthPercent():",
+			"  return NewParam=KismetMathLibrary::Divide_DoubleDouble(A=CurrentHealth, B=MaxHealth)"
+		]
+	},
+	"newVariables":
+	{
+		"CurrentHealth":
+		{
+			"type": "real",
+			"value": "0.000000"
+		},
+		"MaxHealth":
+		{
+			"type": "real",
+			"value": "0.000000"
+		}
+	},
+	"parentClass": "/Script/ModelViewViewModel.MVVMViewModelBase"
+}
