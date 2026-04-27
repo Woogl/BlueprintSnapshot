@@ -1,0 +1,27 @@
+# Unreal Engine generated
+Binaries/
+Intermediate/
+Saved/
+DerivedDataCache/
+Build/
+
+# IDE
+.vs/
+.vscode/
+.idea/
+*.sln
+*.sdf
+*.suo
+*.opensdf
+*.user
+*.xcodeproj
+*.xcworkspace
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Snapshots from consumer projects (only ship the bundled sample)
+Snapshots/Game/
+Snapshots/*/
+!Snapshots/DwBlueprintSnapshot/

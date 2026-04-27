@@ -1,0 +1,47 @@
+{
+	"blueprintPath": "/DwBlueprintSnapshot/BP_SampleCharacter.BP_SampleCharacter",
+	"classDefaults":
+	{
+		"Mesh":
+		{
+			"class": "/Script/Engine.SkeletalMeshComponent",
+			"delta":
+			{
+				"RelativeLocation":
+				{
+					"Z": -90
+				},
+				"RelativeRotation":
+				{
+					"Yaw": -90
+				},
+				"SkeletalMesh": "/Engine/Tutorial/SubEditors/TutorialAssets/Character/TutorialTPP.TutorialTPP",
+				"SkinnedAsset": "/Engine/Tutorial/SubEditors/TutorialAssets/Character/TutorialTPP.TutorialTPP"
+			}
+		},
+		"RootComponent": "CollisionCylinder"
+	},
+	"eventGraph": [
+		"event ReceiveBeginPlay:",
+		"  if (CustomVariable):",
+		"    KismetSystemLibrary::PrintString(InString=\"This is true\")",
+		"  else:",
+		"    KismetSystemLibrary::PrintString(InString=\"This is false\")"
+	],
+	"newFunctions":
+	{
+		"CustomFunction": [
+			"function CustomFunction():",
+			"  return Result=CustomVariable"
+		]
+	},
+	"newVariables":
+	{
+		"CustomVariable":
+		{
+			"type": "bool",
+			"value": "False"
+		}
+	},
+	"parentClass": "/Script/Engine.Character"
+}
